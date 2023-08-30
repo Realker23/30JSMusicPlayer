@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Music Player</title>
+    <script src="https://kit.fontawesome.com/ac2b15fd5e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="musicPlayer">
+            <nav>
+                <div class="circle">
+                    <i class="fa fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="media/Despacito.jpg" class="songImg">
+            <h1>Despacito</h1>
+            <p>Luis Fonsi ft. Puerto Rican</p>
+
+            <audio controls id="song">
+                <source src="media/Despacito.mp3">
+            </audio>
+            <input type="range" id="progress">
+            <div class="control">
+                <div><i class="fa fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i  class="fa fa-solid fa-play" id="playIcon"></i></div>            
+                <div><i class="fa fa-solid fa-forward"></i></div>
+            </div>
+            
+                
+            
+             
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
