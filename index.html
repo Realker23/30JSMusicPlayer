@@ -26,17 +26,17 @@
                 </div>
             </nav>
             <img src="media/Despacito.jpg" class="songImg">
-            <h1>Despacito</h1>
-            <p>Luis Fonsi ft. Puerto Rican</p>
+            <h1 id="songName">Despacito</h1>
+            <p id="authorName">Luis Fonsi ft. Puerto Rican</p>
 
             <audio controls id="song">
                 <source src="media/Despacito.mp3">
             </audio>
             <input type="range" id="progress">
             <div class="control">
-                <div><i class="fa fa-solid fa-backward"></i></div>
+                <div onclick="playPrevious()"><i class="fa fa-solid fa-backward"></i></div>
                 <div onclick="playPause()"><i  class="fa fa-solid fa-play" id="playIcon"></i></div>            
-                <div><i class="fa fa-solid fa-forward"></i></div>
+                <div onclick="playNext()"><i class="fa fa-solid fa-forward"></i></div>
             </div>
             
                 
